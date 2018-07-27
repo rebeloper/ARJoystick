@@ -10,9 +10,12 @@
 		C9A0C844210ABE61000AB981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C843210ABE61000AB981 /* AppDelegate.swift */; };
 		C9A0C846210ABE61000AB981 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C845210ABE61000AB981 /* art.scnassets */; };
 		C9A0C848210ABE61000AB981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C847210ABE61000AB981 /* ViewController.swift */; };
-		C9A0C84B210ABE61000AB981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C849210ABE61000AB981 /* Main.storyboard */; };
 		C9A0C84D210ABE62000AB981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C84C210ABE62000AB981 /* Assets.xcassets */; };
 		C9A0C850210ABE62000AB981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C84E210ABE62000AB981 /* LaunchScreen.storyboard */; };
+		C9A0C858210AC287000AB981 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C857210AC287000AB981 /* Extensions.swift */; };
+		C9A0C85A210AC2DD000AB981 /* ARJoystickSKScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C859210AC2DD000AB981 /* ARJoystickSKScene.swift */; };
+		C9A0C85C210AC2FE000AB981 /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C85B210AC2FE000AB981 /* AnalogJoystick.swift */; };
+		C9A0C85E210AC4B8000AB981 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C85D210AC4B8000AB981 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +23,13 @@
 		C9A0C843210ABE61000AB981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A0C845210ABE61000AB981 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		C9A0C847210ABE61000AB981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9A0C84A210ABE61000AB981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9A0C84C210ABE62000AB981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A0C84F210ABE62000AB981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A0C851210ABE62000AB981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9A0C857210AC287000AB981 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9A0C859210AC2DD000AB981 /* ARJoystickSKScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARJoystickSKScene.swift; sourceTree = "<group>"; };
+		C9A0C85B210AC2FE000AB981 /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
+		C9A0C85D210AC4B8000AB981 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +65,13 @@
 				C9A0C843210ABE61000AB981 /* AppDelegate.swift */,
 				C9A0C845210ABE61000AB981 /* art.scnassets */,
 				C9A0C847210ABE61000AB981 /* ViewController.swift */,
-				C9A0C849210ABE61000AB981 /* Main.storyboard */,
 				C9A0C84C210ABE62000AB981 /* Assets.xcassets */,
 				C9A0C84E210ABE62000AB981 /* LaunchScreen.storyboard */,
 				C9A0C851210ABE62000AB981 /* Info.plist */,
+				C9A0C857210AC287000AB981 /* Extensions.swift */,
+				C9A0C859210AC2DD000AB981 /* ARJoystickSKScene.swift */,
+				C9A0C85B210AC2FE000AB981 /* AnalogJoystick.swift */,
+				C9A0C85D210AC4B8000AB981 /* Constants.swift */,
 			);
 			path = ARJoystick;
 			sourceTree = "<group>";
@@ -128,7 +137,6 @@
 				C9A0C846210ABE61000AB981 /* art.scnassets in Resources */,
 				C9A0C850210ABE62000AB981 /* LaunchScreen.storyboard in Resources */,
 				C9A0C84D210ABE62000AB981 /* Assets.xcassets in Resources */,
-				C9A0C84B210ABE61000AB981 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +148,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A0C848210ABE61000AB981 /* ViewController.swift in Sources */,
+				C9A0C85C210AC2FE000AB981 /* AnalogJoystick.swift in Sources */,
+				C9A0C85A210AC2DD000AB981 /* ARJoystickSKScene.swift in Sources */,
+				C9A0C858210AC287000AB981 /* Extensions.swift in Sources */,
 				C9A0C844210ABE61000AB981 /* AppDelegate.swift in Sources */,
+				C9A0C85E210AC4B8000AB981 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9A0C849210ABE61000AB981 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9A0C84A210ABE61000AB981 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9A0C84E210ABE62000AB981 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
